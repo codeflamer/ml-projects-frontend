@@ -10,9 +10,8 @@ export default function Home() {
       <h3 className="mt-4">Here are the lists of all ml projects to explore</h3>
       <ul className="mt-10">
         <li>
-          1. Linear Regression task:{" "}
           <Link href="/insurance-price-prediction">
-            Insurance Price Prediction Model
+            1. Linear Regression task: Insurance Price Prediction Model
           </Link>
         </li>
       </ul>

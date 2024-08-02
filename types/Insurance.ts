@@ -1,11 +1,11 @@
 import * as z from "zod";
 
 export type GENDER = {
-  gender: [string, string];
+  gender: string[];
 };
 
 export type REGION = {
-  locations: [];
+  locations: string[];
 };
 
 export const schema = z.object({

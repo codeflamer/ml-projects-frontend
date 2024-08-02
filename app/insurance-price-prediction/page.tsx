@@ -1,11 +1,16 @@
 import { InsuranceModelForm } from "@/components/insurance-model/insurance-model-form";
-import { getGenders, getLocations } from "@/model/Insurance/query";
+// import { getGenders, getLocations } from "@/model/Insurance/query";
 import Image from "next/image";
 import Link from "next/link";
 
 export default async function Insurance() {
-  const regions = await getLocations();
-  const genders = await getGenders();
+  // const regions = await getLocations();
+  // const genders = await getGenders();
+
+  const genders = { gender: ["female", "male"] };
+  const regions = {
+    locations: ["northeast", "northwest", "southeast", "southwest"],
+  };
 
   return (
     <main className="flex min-h-screen flex-col items-center  p-24">
