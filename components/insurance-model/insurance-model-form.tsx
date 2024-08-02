@@ -39,7 +39,7 @@ export const InsuranceModelForm = ({
   const onSubmit = async (data: Schema) => {
     // console.log(data);
     const response = await handleRequest(data);
-    setPrice(response);
+    setPrice(response.price);
   };
   return (
     <div className="mt-3">
