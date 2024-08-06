@@ -20,13 +20,21 @@ export default function RootLayout({
       {/* TODO: MAke page more beautiful; */}
       <body className={inter.className}>
         <main className="flex flex-col max-w-screen-xl mx-auto p-5">
-          <nav className="flex justify-between mb-10">
-            <div>Company logo</div>
+          <nav className="flex justify-between mb-10 sticky top-0 ">
+            <div>TomaClass</div>
             <ul className="flex space-x-8">
-              <li>About the Project</li>
-              <li>Resources</li>
+              <li>
+                <Link href="/tomatoes-disease-prediction/about-project">
+                  About the Project
+                </Link>
+              </li>
+              <li>
+                <Link href="/tomatoes-disease-prediction/diseases">
+                  About Diseases
+                </Link>
+              </li>
               <li className="">
-                <Link href="tomatoes-disease-prediction/make-prediction">
+                <Link href="/tomatoes-disease-prediction/make-prediction">
                   Predict
                 </Link>
               </li>

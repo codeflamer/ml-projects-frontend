@@ -17,6 +17,7 @@ import { useDropzone } from "react-dropzone";
 import { useMutation } from "@tanstack/react-query";
 import { useToast } from "../ui/use-toast";
 import { ToastAction } from "../ui/toast";
+import { Loader } from "lucide-react";
 
 const PredictionDisplay = () => {
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -29,13 +30,13 @@ const PredictionDisplay = () => {
       console.log(res);
     },
     onError: () => {
-      setShowModal(false);
-      toast({
-        variant: "destructive",
-        title: "Uh oh! Something went wrong.",
-        description: "There was a problem with your request.",
-        action: <ToastAction altText="Try again">Try again</ToastAction>,
-      });
+      // setShowModal(false);
+      // toast({
+      //   variant: "destructive",
+      //   title: "Uh oh! Something went wrong.",
+      //   description: "There was a problem with your request.",
+      //   action: <ToastAction altText="Try again">Try again</ToastAction>,
+      // });
     },
   });
 
@@ -105,7 +106,9 @@ const PredictionDisplay = () => {
                 <div className="text-[17px]">
                   <div className="mx-auto">{thumbs}</div>
                   {mutation.isPending && (
-                    <p className="text-center mt-3">Loading...</p>
+                    <p className="text-center mt-3 mx-auto">
+                      <Loader className="animate-spin mx-auto h-6 w-6" />
+                    </p>
                   )}
 
                   {mutation.isSuccess && (
