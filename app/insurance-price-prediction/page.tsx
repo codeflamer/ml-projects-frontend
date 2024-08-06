@@ -13,7 +13,7 @@ export default async function Insurance() {
   };
 
   return (
-    <main className="flex min-h-screen flex-col items-center  p-24">
+    <main className="flex min-h-screen flex-col items-center p-24">
       <h1 className="text-2xl italic ">
         Welcome to Insurance Price Prediction Model
       </h1>

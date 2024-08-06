@@ -8,10 +8,16 @@ export default function Home() {
         Welcome to the home of all ML Projects
       </h1>
       <h3 className="mt-4">Here are the lists of all ml projects to explore</h3>
-      <ul className="mt-10">
-        <li>
+      <ul className="mt-10 space-y-4">
+        <li className="block">
           <Link href="/insurance-price-prediction">
             1. Linear Regression task: Insurance Price Prediction Model
+          </Link>
+        </li>
+        <li>
+          <Link href="/tomatoes-disease-prediction">
+            2. Tomatoes leaf disease classification: Tomatoes Diesease
+            classfication model
           </Link>
         </li>
       </ul>
