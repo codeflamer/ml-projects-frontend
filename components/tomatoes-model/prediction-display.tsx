@@ -54,10 +54,11 @@ const PredictionDisplay = () => {
     },
   });
 
-  // TODO: Strick validatioon for drag and drop
+  // TODO: Strict validatioon for drag and drop
 
   const thumbs = acceptedFiles.map((file: File) => (
     <div key={file.name}>
+      {/* given fixed heiht and width */}
       <div>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
