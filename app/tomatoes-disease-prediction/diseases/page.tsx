@@ -1,12 +1,20 @@
-"use client";
 import React from "react";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import fs from "fs";
+import path from "path";
+// import matter from "gray-matter";
+// import { MDXRemote } from "next-mdx-remote/rsc";
 
 const DiseaseContent = dynamic(() => import("./disease-content.mdx"));
 
-// export async function generateStaticParams(){
+// export async function generateStaticParams() {
+//   const filePath = path.join(process.cwd(), "content/example.mdx");
+//   const fileContent = fs.readFileSync(filePath, "utf-8");
+//   const { content, data: frontMatter } = matter(fileContent);
+//   const mdxSource = await serialize(content, { scope: frontMatter });
 
+//   return { mdxSource, frontMatter };
 // }
 
 const AboutDisease = () => {
