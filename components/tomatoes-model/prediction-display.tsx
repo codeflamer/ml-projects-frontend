@@ -127,8 +127,6 @@ const PredictionDisplay = () => {
     },
   });
 
-  // TODO: Strict validatioon for drag and drop
-
   const thumbs = acceptedFiles.map((file: File) => (
     <div key={file.name}>
       {/* given fixed heiht and width */}
