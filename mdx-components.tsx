@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 export const styleMaps = {
   h1: ({ ...props }) => (
     <h1
-      className={cn("mt-2 scroll-m-20 text-4xl font-bold tracking-tight")}
+      className={cn("mt-2 scroll-m-20 text-4xl font-bold tracking-tight ")}
       {...props}
     />
   ),
