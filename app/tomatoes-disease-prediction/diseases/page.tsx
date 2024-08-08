@@ -22,7 +22,7 @@ const AboutDisease = () => {
     <div className="prose mx-auto prose-slate prose-hr:my-4 prose-img:rounded-md prose-img:mx-auto  prose-p:text-justify">
       <DiseaseContent />
       <Image
-        src="/images/tomatoes/Tomato_Target_Spot.jpg"
+        src="/images/tomatoes/tolu.jpg"
         alt="Tomato Target Spot"
         width={200}
         height={200}
