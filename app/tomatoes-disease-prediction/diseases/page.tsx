@@ -27,11 +27,11 @@ const AboutDisease = () => {
         width={200}
         height={200}
       />
-      <img
-        src="/images/tomatoes/Tomato_Septoria_Leaf_spot.jpg"
+      {/* <img
+        src="/images/tomatoes/Tomato_Septoria_Leaf_spot.JPG"
         alt="Shadcn Avatar"
         style={{ width: "300px", height: "300px" }}
-      />
+      /> */}
       {/* <Image
         src="/images/tomatoes/Tomato_Septoria_Leaf_spot.jpg"
         alt=""
